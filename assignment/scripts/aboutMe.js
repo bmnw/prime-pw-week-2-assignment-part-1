@@ -47,7 +47,7 @@
 
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 
-        let friendsPets = 1;
+        let friendsPets = 4;
         console.log(friendsPets);
 
 // 11 - Add two pets to your `pets` variable
@@ -104,6 +104,24 @@
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
+        let mostPets = 0;
+        console.log(mostPets);
+
+        pets = 2;
+        friendsPets = 0;
+
+        if(pets > friendsPets){
+            mostPets = pets;
+        } // end pets is more
+         else if(friendsPets > pets){
+            mostPets = friendsPets;
+        }  // end friendsPets is more
+        else {
+            mostPets = 'we have the same number of pets!';
+        } // end the same
+
+        console.log(mostPets);
+
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
 //      "Second is the best" if your lucky number is 2
@@ -113,4 +131,4 @@
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-
+        adventurous ? console.log('Adventures are great!') : console.log('How about we stay home?');
